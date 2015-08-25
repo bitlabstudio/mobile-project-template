@@ -1,0 +1,17 @@
+Django==1.8
+Fabric==1.10.1
+Pillow
+coverage
+django-allauth
+django-cors-headers
+django-coverage
+django-debug-toolbar
+django-extensions
+django-pipeline
+djangorestframework
+easy-thumbnails==2.2
+ipdb
+markdown
+mixer
+mock
+psycopg2==2.6

@@ -1,0 +1,34 @@
+DEBUG = True
+TEMPLATE_DEBUG = True
+ALLOWED_HOSTS = []
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'theartling_marketplace',
+        'USER': 'theartling_marketplace',
+        'PASSWORD': 'theartling_marketplace',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+
+ADMINS = (
+    ('Your name', 'yourname@gmail.com'),
+)
+MANAGERS = ADMINS
+MEDIA_ROOT = '/home/ubuntu/theartling-marketplace_assets/media'
+MEDIA_URL = '/media/'
+STATIC_ROOT = '/home/ubuntu/theartling-marketplace_assets/static'
+STATIC_URL = '/static/'
+LOCAL_PG_ADMIN_ROLE = 'username'
+LOCAL_PG_USE_LOCALHOST = True
+SECRET_KEY = 'Foobar'
+PEM_KEY_DIR = '/path/to/.ssh/theartling.pem'
+
+BRAINTREE_PRODUCTION = False
+BRAINTREE_MERCHANT_ID = ''
+BRAINTREE_PUBLIC_KEY = ''
+BRAINTREE_PRIVATE_KEY = ''
+
+STRIPE_API_KEY = ''
