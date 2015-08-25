@@ -1,0 +1,8 @@
+platforms/ios/www
+platforms/android/www
+platforms/android/assets
+platforms/android/res/xml/config.xml
+platforms/ios/Luxglove.xcodeproj/project.pbxproj
+platforms/ios/Luxglove.xcodeproj/project.xcworkspace/xcuserdata/martin.xcuserdatad/UserInterfaceState.xcuserstate
+platforms/ios/Luxglove/Luxglove-Info.plist
+platforms/ios/Luxglove/config.xml
