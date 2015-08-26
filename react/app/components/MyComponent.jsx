@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 
 import * as theme from "../constants/theme.js";
 import * as types from "../constants/actions.js";
+import Title from "../framework/Title.jsx";
 import request from "../api.js";
 
 const initialState = {
@@ -84,7 +85,7 @@ export default class MyComponent extends React.Component {
           styles.base,
           isActive && theme.Active
       ]}>
-        <h1>{title}</h1>
+        <Title styles={theme.titleOverride}>{title}</Title>
         {isLoadingVersion &&
           <p>Loading..</p>
         }
