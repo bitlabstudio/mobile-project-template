@@ -69,7 +69,7 @@ if(TARGET === "build-web") {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        title: "Marketplace",
+        title: "React App",
         filename: "index.html",
         template: "./templates/index_web.html"
       })

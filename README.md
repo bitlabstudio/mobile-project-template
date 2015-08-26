@@ -24,7 +24,9 @@ ln -s ../mobile/build/ios www
 ## Install JDK & Android Studio
 
 * JDK: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+  * Set your exports: http://stackoverflow.com/a/14788889
 * Android Studio: http://developer.android.com/sdk/index.html
+  * add ``/home/myusername/Android/Sdk/tools`` to `PATH`
 
 ## Install ant
 

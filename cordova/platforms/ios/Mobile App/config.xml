@@ -14,13 +14,19 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
-    <name>HelloCordova</name>
+    <name>Mobile App</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        A simple dummy app
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="test@example.com" href="https://example.com">
+        Example Person
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="disallowOverscroll" value="true" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="webviewbounce" value="false" />
 </widget>
