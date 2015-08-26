@@ -1,6 +1,7 @@
 import React from "react";
 import Radium from "radium";
 import { connect } from "react-redux";
+import _ from "lodash";
 
 import * as theme from "../constants/theme.js";
 import * as types from "../constants/actions.js";
@@ -67,7 +68,10 @@ function getVersion() {
 @Radium
 export default class MyComponent extends React.Component {
   componentWillMount() {
-    this.props.dispatch(getVersion());
+    let { dispatch, location } = this.props;
+    let isActive = _.startsWith(location.pathname, "/");
+    console.log(isActive);
+    dispatch(getVersion());
   }
 
   handleClick() {
