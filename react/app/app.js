@@ -2,17 +2,14 @@ import React from "react";
 import { Router, Route } from "react-router";
 import { history } from "react-router/lib/HashHistory";
 
-import App from "./components/App.jsx";
-import MyComponent from "./components/MyComponent.jsx";
-import OtherComponent from "./components/OtherComponent.jsx";
-import InnerComponent from "./components/InnerComponent.jsx";
+import * as app from "./index.js";
 
 const routes = (
-  <Route component={App}>
-    <Route path="/" component={MyComponent}>
-      <Route path="inner" component={InnerComponent} />
+  <Route component={app.Views.App}>
+    <Route path="/" component={app.Views.MyComponent}>
+      <Route path="inner" component={app.Views.InnerComponent} />
     </Route>
-    <Route path="/other" component={OtherComponent} />
+    <Route path="/other" component={app.Views.OtherComponent} />
   </Route>
 );
 
