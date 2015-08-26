@@ -1,1 +1,7 @@
+export const SERVER_ERROR = "SERVER_ERROR";
+export const FETCH_ERROR = "FETCH_ERROR";
+
+export const GET_VERSION = "GET_VERSION";
+export const GET_VERSION_SUCCESS = "GET_VERSION_SUCCESS";
+export const GET_VERSION_ERROR = "GET_VERSION_ERROR";
 export const FOOBAR_CLICK = "FOOBAR_CLICK";
