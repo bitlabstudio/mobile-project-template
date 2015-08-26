@@ -1,8 +1,16 @@
 import React from "react";
 import { Router, Route } from "react-router";
 import { history } from "react-router/lib/HashHistory";
+import { createStore, combineReducers, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import thunk from "redux-thunk";
 
 import * as app from "./index.js";
+import * as reducers from "./reducers.js";
+
+const reducer = combineReducers(reducers);
+const finalCreateStore = applyMiddleware(thunk)(createStore);
+const redux = finalCreateStore(reducer, {});
 
 const routes = (
   <Route component={app.Views.App}>
@@ -14,7 +22,9 @@ const routes = (
 );
 
 const element = (
-  <Router history={history} children={routes} />
+  <Provider store={redux}>
+    {() => <Router history={history} children={routes}/> }
+  </Provider>
 );
 
 let container = document.createElement("div");
